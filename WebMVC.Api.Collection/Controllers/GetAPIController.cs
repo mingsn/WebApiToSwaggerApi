@@ -50,22 +50,9 @@ namespace WebMVC.Api.Collection.Controllers
         public IHttpActionResult GetNameList(NameModel model)
         {
             List<NameModel> result = new List<NameModel>();
-
-            for (int i = 0; i < 3; i++)
-            {
-                if (i == 0)
-                {
-                    result.Add(new NameModel { Name = model.Name + " - mingsn", Age = 22 });
-                }
-                else if (i == 1)
-                {
-                    result.Add(new NameModel { Name = model.Name + " - 小米", Age = 22 });
-                }
-                else
-                {
-                    result.Add(new NameModel { Name = model.Name + " - 宁淑", Age = 22 });
-                }
-            }
+            result.Add(new NameModel { Name = model.Name + " - mingsn", Age = 22 });
+            result.Add(new NameModel { Name = model.Name + " - 小米", Age = 22 });
+            result.Add(new NameModel { Name = model.Name + " - 宁淑", Age = 22 });
             return Json(new { list = result });
         }
 
