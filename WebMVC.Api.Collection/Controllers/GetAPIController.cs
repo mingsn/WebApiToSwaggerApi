@@ -10,7 +10,7 @@ namespace WebMVC.Api.Collection.Controllers
     /// <summary>
     /// Get Type API Test
     /// </summary>
-    public class GetAPIController : ApiController
+    public class GetAPIController : BaseApiController
     {
         /// <summary>
         /// 获取名称，内部制定
@@ -57,9 +57,31 @@ namespace WebMVC.Api.Collection.Controllers
         }
 
         /// <summary>
+        /// 添加名称数据
+        /// </summary>
+        /// <param name="model">带有名字的对象</param>
+        /// <returns>返回一个处理后的人物属性列表</returns>
+        [HttpPost]
+        public IHttpActionResult SetNameData(NameModel model)
+        {
+            string key = "NameModels";
+            var list = (List<NameModel>)Cache.AddCahce(key, () => { return new List<NameModel>(); });
+            if (!list.Contains(model))
+            {
+                list.Add(model);
+                return Ok($"success hascode: {model.GetHashCode()}");
+            }
+            else
+            {
+                return Ok("exists");
+            }
+        }
+
+
+        /// <summary>
         /// Name Object
         /// </summary>
-        public class NameModel
+        public class NameModel : IEquatable<NameModel>
         {
             /// <summary>
             /// 名称
@@ -70,6 +92,16 @@ namespace WebMVC.Api.Collection.Controllers
             /// 年龄
             /// </summary>
             public int Age { get; set; }
+
+            /// <summary>
+            /// 
+            /// </summary>
+            /// <param name="other"></param>
+            /// <returns></returns>
+            public bool Equals(NameModel other)
+            {
+                return this.Name == other.Name && this.Age == other.Age;
+            }
         }
     }
 }
