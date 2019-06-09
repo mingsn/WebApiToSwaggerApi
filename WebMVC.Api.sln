@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMVC.Api.Collection", "We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMVC.Service", "WebMVC.Service\WebMVC.Service.csproj", "{041BB891-298B-408E-90BA-DAC3B3708382}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMVC.Com.ClassLibrary", "WebMVC.Com.ClassLibrary\WebMVC.Com.ClassLibrary.csproj", "{58F23443-1A28-49CA-B369-E2E1E705A09C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{041BB891-298B-408E-90BA-DAC3B3708382}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{041BB891-298B-408E-90BA-DAC3B3708382}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{041BB891-298B-408E-90BA-DAC3B3708382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F23443-1A28-49CA-B369-E2E1E705A09C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F23443-1A28-49CA-B369-E2E1E705A09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F23443-1A28-49CA-B369-E2E1E705A09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F23443-1A28-49CA-B369-E2E1E705A09C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

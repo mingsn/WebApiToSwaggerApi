@@ -7,6 +7,7 @@ using System.Xml;
 using System.IO;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -66,7 +67,7 @@ namespace WebMVC.Api
                         //c.BasicAuth("basic")
                         //    .Description("Basic HTTP Authentication");
                         //
-						// NOTE: You must also configure 'EnableApiKeySupport' below in the SwaggerUI section
+                        // NOTE: You must also configure 'EnableApiKeySupport' below in the SwaggerUI section
                         //c.ApiKey("apiKey")
                         //    .Description("API Key Authentication")
                         //    .Name("apiKey")
@@ -106,7 +107,11 @@ namespace WebMVC.Api
                         // those comments into the generated docs and UI. You can enable this by providing the path to one or
                         // more Xml comment files.
                         //
-                        c.IncludeXmlComments(@"E:\APS.NET MVC\WebMVC.Api\WebMVC.Api.Collection\bin\Debug\WebMVC.Api.Collection.xml");
+                        // 为 Swagger JSON and UI设置xml文档注释路径
+                        string basePath = AppDomain.CurrentDomain.RelativeSearchPath;//获取应用程序所在目录（绝对，不受工作目录影响，建议采用此方法获取路径）
+                        var xmlPath = Path.Combine(basePath, "WebMVC.Api.Collection.xml");
+                        //c.IncludeXmlComments(@"E:\APS.NET MVC\WebMVC.Api\WebMVC.Api.Collection\bin\Debug\WebMVC.Api.Collection.xml");
+                        //c.IncludeXmlComments(@"E:\APS.NET MVC\WebMVC.Api\WebMVC.Api.Collection\bin\Debug\WebMVC.Api.Collection.xml");
 
                         // Swashbuckle makes a best attempt at generating Swagger compliant JSON schemas for the various types
                         // exposed in your API. However, there may be occasions when more control of the output is needed.
@@ -212,7 +217,7 @@ namespace WebMVC.Api
                         // in a badge at the bottom of the page. Use these options to set a different validator URL or to disable the
                         // feature entirely.
                         //c.SetValidatorUrl("http://localhost/validator");
-                        //c.DisableValidator();
+                        c.DisableValidator();
 
                         // Use this option to control how the Operation listing is displayed.
                         // It can be set to "None" (default), "List" (shows operations for each resource),
