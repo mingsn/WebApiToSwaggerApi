@@ -296,7 +296,8 @@ namespace WebMVC.Api
             /// <returns>所有控制器描述</returns>
             public static ConcurrentDictionary<string, string> GetControllerDesc()
             {
-                string xmlpath = @"E:\APS.NET MVC\WebMVC.Api\WebMVC.Api.Collection\bin\Debug\WebMVC.Api.Collection.xml";
+                string basePath = AppDomain.CurrentDomain.RelativeSearchPath;//获取应用程序所在目录（绝对，不受工作目录影响，建议采用此方法获取路径）
+                var xmlpath = Path.Combine(basePath, "WebMVC.Api.Collection.xml");
                 ConcurrentDictionary<string, string> controllerDescDict = new ConcurrentDictionary<string, string>();
                 if (File.Exists(xmlpath))
                 {
