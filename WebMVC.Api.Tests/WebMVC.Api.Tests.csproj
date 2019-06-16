@@ -103,6 +103,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
     <Compile Include="Controllers\ValuesControllerTest.cs" />
+    <Compile Include="Sql\UnitTest1.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -114,6 +115,10 @@
     <ProjectReference Include="..\WebMVC.Api\WebMVC.Api.csproj">
       <Project>{AFCFD656-33C7-48F4-9363-A27CC9B7B40A}</Project>
       <Name>WebMVC.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebMVC.Service\WebMVC.Service.csproj">
+      <Project>{041BB891-298B-408E-90BA-DAC3B3708382}</Project>
+      <Name>WebMVC.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
