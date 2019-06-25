@@ -1,0 +1,11 @@
+E:\ASP.NET Core\ConsoleAppExpress\ConsoleAppExpress\bin\Debug\netcoreapp2.1\ConsoleAppExpress.deps.json
+E:\ASP.NET Core\ConsoleAppExpress\ConsoleAppExpress\bin\Debug\netcoreapp2.1\ConsoleAppExpress.runtimeconfig.json
+E:\ASP.NET Core\ConsoleAppExpress\ConsoleAppExpress\bin\Debug\netcoreapp2.1\ConsoleAppExpress.runtimeconfig.dev.json
+E:\ASP.NET Core\ConsoleAppExpress\ConsoleAppExpress\bin\Debug\netcoreapp2.1\ConsoleAppExpress.dll
+E:\ASP.NET Core\ConsoleAppExpress\ConsoleAppExpress\bin\Debug\netcoreapp2.1\ConsoleAppExpress.pdb
+E:\ASP.NET Core\ConsoleAppExpress\ConsoleAppExpress\obj\Debug\netcoreapp2.1\ConsoleAppExpress.csprojAssemblyReference.cache
+E:\ASP.NET Core\ConsoleAppExpress\ConsoleAppExpress\obj\Debug\netcoreapp2.1\ConsoleAppExpress.csproj.CoreCompileInputs.cache
+E:\ASP.NET Core\ConsoleAppExpress\ConsoleAppExpress\obj\Debug\netcoreapp2.1\ConsoleAppExpress.AssemblyInfoInputs.cache
+E:\ASP.NET Core\ConsoleAppExpress\ConsoleAppExpress\obj\Debug\netcoreapp2.1\ConsoleAppExpress.AssemblyInfo.cs
+E:\ASP.NET Core\ConsoleAppExpress\ConsoleAppExpress\obj\Debug\netcoreapp2.1\ConsoleAppExpress.dll
+E:\ASP.NET Core\ConsoleAppExpress\ConsoleAppExpress\obj\Debug\netcoreapp2.1\ConsoleAppExpress.pdb
