@@ -57,6 +57,7 @@
     <Compile Include="Controllers\BaseApiController.cs" />
     <Compile Include="Controllers\FileTestController.cs" />
     <Compile Include="Controllers\GetAPIController.cs" />
+    <Compile Include="Controllers\ParallelTestController.cs" />
     <Compile Include="Controllers\PathTestController.cs" />
     <Compile Include="Controllers\XmlTestController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
